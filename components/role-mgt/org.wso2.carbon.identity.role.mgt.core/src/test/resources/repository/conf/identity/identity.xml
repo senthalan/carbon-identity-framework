@@ -690,7 +690,7 @@
              Capacity is the maximum cache size.
              Unless specifically mentioned, you do not need to set the isDistributed flag.
          -->
-        <CacheManager name="IdentityApplicationManagementCacheManager">
+        <CacheManager name="IdentityCacheManager">
             <Cache name="AppAuthFrameworkSessionContextCache"
                    enable="true" timeout="300" capacity="5000" isDistributed="false"/>
             <Cache name="AuthenticationContextCache" enable="true" timeout="300" capacity="5000" isDistributed="false"/>

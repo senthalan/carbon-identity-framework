@@ -126,7 +126,7 @@ public class SessionDataStore {
 
     private static final int DEFAULT_DELETE_LIMIT = 50000;
     public static final String DEFAULT_SESSION_STORE_TABLE_NAME = "IDN_AUTH_SESSION_STORE";
-    private static final String CACHE_MANAGER_NAME = "IdentityApplicationManagementCacheManager";
+    private static final String CACHE_MANAGER_NAME = "IdentityCacheManager";
     public static final String DEFAULT_TEMP_SESSION_STORE_TABLE_NAME = "IDN_AUTH_TEMP_SESSION_STORE";
     private static int maxSessionDataPoolSize = 100;
     private static int maxTempDataPoolSize = 50;

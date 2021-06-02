@@ -124,7 +124,7 @@ public class SSOConsentServiceImpl implements SSOConsentService {
                                                                           AuthenticatedUser authenticatedUser)
             throws SSOConsentServiceException {
 
-        return getConsentRequiredClaims(serviceProvider, authenticatedUser, true);
+        return getConsentRequiredClaims(serviceProvider, authenticatedUser, true); // from pre and post consent
     }
 
     /**
@@ -738,7 +738,7 @@ public class SSOConsentServiceImpl implements SSOConsentService {
                                                        UserConsent userConsent, boolean isConsented)
             throws SSOConsentServiceException {
 
-        List<ClaimMetaData> requestedClaims = new ArrayList<>();
+        List<ClaimMetaData> requestedClaims = new ArrayList<>(); // here
         if (isConsented) {
             requestedClaims.addAll(userConsent.getApprovedClaims());
         } else {

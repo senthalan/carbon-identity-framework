@@ -49,7 +49,7 @@ import javax.cache.Caching;
 @Deprecated
 public class BaseCache<K extends Serializable, V extends Serializable> {
 
-    private static final String CACHE_MANAGER_NAME = "IdentityApplicationManagementCacheManager";
+    private static final String CACHE_MANAGER_NAME = "IdentityCacheManager";
     private CacheBuilder<K, V> cacheBuilder;
     private String cacheName;
     private List<AbstractCacheListener> cacheListeners = new ArrayList<>();
